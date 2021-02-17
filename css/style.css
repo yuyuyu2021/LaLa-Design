@@ -1,0 +1,692 @@
+@charset "utf-8";
+
+/*全ページ共通部分-------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ Pro W6", "Yu Gothic Medium", "游ゴシック Medium", "游ゴシック体", "Yu Gothic", Arial,sans-serif;
+    line-height: 2rem;
+    color: #191d4d;
+}
+
+a {
+    color: #191d4d;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #191d4d;
+}
+
+h2{
+    /*見出しのフォント指定*/
+    font-family: Arial,sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* -----------------------メニュー------------------------------ */
+.logo {
+    display:block;
+    width: 167px;
+    margin: 0 auto;
+}
+
+.page-header {
+    /* ロゴとメニューを並べる*/
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.menu-list li {
+    /*listの初期指定の●を消す*/
+    list-style-type: none;
+}
+
+.menu-list a {
+    font-size: 20px;
+    padding: 0 15px;
+    display: block;
+    line-height: 40px;
+}
+
+.menu-list ul {
+    display: flex;
+}
+
+header {
+    background-color: #fff;
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+header li:last-child {
+    /*  https://cotodama.co/fl-child/ 参照*/
+    border: none;
+}
+
+/* https://coliss.com/articles/build-websites/operation/css/one-way-hover-effect.html アニメーションについて参照 */
+
+.menu-item::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.menu-item:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu-item {
+    /* アニメーションをつけたいものを基準にする */
+    position: relative;
+}
+
+.menu-item::before {
+    content: " ";
+    display: block;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: #CCF3FA;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+/*main-visual-------------------------------------------------------*/
+.main-visual {
+    position:relative;
+    top: calc(40px + 2.4vw);
+    height: calc(800px - 6vw);
+}
+.main-copy {
+    display: table;
+    width: 290px;
+    height: 290px;
+    background-color: #fff;
+    border: 5px solid #191d4d;
+    text-align: left;
+    padding: 21px 32px;
+    position: absolute;
+    top: calc(125px - 3vw);
+}
+
+.main-copy h1 {
+    display: table-cell;
+    font-size: 40px;
+    line-height: 56px;
+    font-family: "ヒラギノ角ゴ w6","ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ Pro W6", "Yu Gothic Medium", "游ゴシック Medium", "游ゴシック体", "Yu Gothic", sans-serif;
+    vertical-align: middle;
+}
+
+.main-visual img {
+    position: absolute;
+    width: calc(900px - 10vw);
+    right:0;
+}
+
+
+.main-copy span {
+    /* https://wunderstand.net/418/  参照----文字に蛍光ペンのような線を引くCSS*/
+    background: linear-gradient(transparent 70%, #A6D9E2 70%);
+}
+
+.main-copy2 h2 {
+    /*筆記体*/
+    position:absolute;
+    font-family: 'Pacifico', cursive;
+    font-size: 86px;
+    color: #191d4d;
+    transform: rotate(-10deg);
+    margin-top: calc(540px - 10vw);
+    right: -2%;
+}
+
+.sub-copy {
+    position: absolute;
+    margin-top: calc(540px - 6vw);
+    font-size: 17px;
+    line-height: 32px;
+}
+
+/*-------------service~contactの共通設定--------------*/
+.service,
+.blog-section {
+    background-color: #fff;
+    margin-bottom: 150px;
+    border:2px solid #F8E7EB;
+    box-shadow: 10px 10px #F8E7EB;
+}
+
+.service-container,
+.blog-section-container {
+    width: 740px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+article h2,
+section h2 {
+    /*-----Service----*/
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+
+.service h2:before,
+.blog-section h2:before {
+    /* 装飾の線 */
+    position: absolute;
+    top: 67px;/*h2のpaddingを含めた高さの半分+1px*/
+    left:calc(-50vw + 450px);
+    width: calc(50vw - 120px);
+    height: 1px;
+    content: '';
+    background: #191d4d;
+}
+
+.service img,
+.blog-section img {
+    width: 340px;
+    /* height: 302px; */
+    /* object-fit: cover; */
+}
+
+
+.item {
+    position: relative;
+}
+
+.item h3 {
+    /*筆記体 Design Illustration*/
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: #E72385;
+    position: absolute;
+    left: -20px;
+    top: 29px;
+    transform: rotate(-10deg);
+}
+
+.service p {
+    /* 説明文 */
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 30px 0 50px 0;
+    /* --------- https://saruwakakun.com/html-css/reference/letter-spacing--------参照*/
+    letter-spacing: -0.05em;
+    width: 340px;
+}
+
+/*-------------Works--------------*/
+.works-section {
+    width: 100%;
+    margin-bottom: 150px;
+    padding: 5% 0;
+    background-color: #CCF3FA;
+}
+
+.works-container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.page {
+    width: 900px;
+}
+/*-----------------------------sliderのcss-*/
+
+
+#slide {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+#slide ul {
+    position: absolute;
+    width: 2700px;
+}
+
+#slide li {
+    float: left;
+    width: 900px;
+    list-style-type: none;
+}
+
+
+/*----------------------------------------*/
+.works-section h2 {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.works-section h2:before {
+    position: absolute;
+    right: 0;
+    top: 18px;
+    width: calc(50vw - 120px);
+    height: 1px;
+    content: '';
+    background: #191d4d;
+}
+
+.works-p {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.works-p p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.button p{
+    display: inline-block;
+    padding: 16px 80px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px;
+    background-color: #191d4d;
+}
+
+.button p:hover {
+    background-color: rgba(25, 29, 77, 0.5);
+}
+
+.button p::after {
+    content: "▶︎";
+}
+
+button {
+    opacity: .6;
+    transition: opacity .2s;
+    border: none;
+    background: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 45%;
+    left: 20px;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 45%;
+    right: 20px;
+}
+/*-------------Blog--------------*/
+
+.blog-section h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "ヒラギノ角ゴ w6";
+    padding: 30px 0 10px 0;
+    width: 340px;
+}
+
+.blog-section-item p {
+    background-color: #fff;
+    width: 5rem;
+    text-align: center;
+    border-radius: 40px;
+    margin-bottom: 50px;
+}
+.other {
+    color:#8c8c8d;
+    border: 2px solid #8c8c8d;
+}
+.reading {
+    color: #F8AB1E;
+    border: 2px solid #F8AB1E;
+}
+
+.movie {
+    color: #E72385;
+    border: 2px solid #E72385;
+}
+
+.blog-tag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-tag p{
+    font-size: 1rem;
+}
+
+.more:hover {
+    color: rgba(25, 29, 77, 0.5);
+}
+
+/*-------------------------contact------------------------*/
+.contact-section h2{
+    padding-bottom: 25px;
+}
+.contact-section {
+    width: 900px;
+    background-color: #191d4d;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    border-radius: 100vh;
+}
+
+.contact-section p {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section:hover {
+    background-color: rgba(25, 29, 77, 0.5);
+}
+
+/*-------------------------フッター-------------------------*/
+footer {
+    background-color: #F8E7EB;
+    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+.footer {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list {
+    /*liを横に並べる*/
+    display: flex;
+}
+
+footer li {
+    /*listの初期指定の●を消す*/
+    list-style-type: none;
+    border-right: 0.5px solid #191d4d;
+}
+
+.footer-list a {
+    font-size: 2.2vmin;
+    padding: 0 1.3vmin;
+    display: block;
+}
+.footer-list a:hover {
+    color: rgba(25, 29, 77, 0.5);
+}
+small {
+    font-size: 1vw;
+}
+
+footer li:last-child {
+    /*  https://cotodama.co/fl-child/ 参照*/
+    border: none;
+}
+
+li.first a {
+    padding-left: 0px;
+}
+
+
+/* ------------------------------------------レスポンシブ対応 */
+
+@media ( max-width: 950px) {
+    .wrapper{
+        width: 100%;
+    }
+    .page-header {
+        flex-direction: column;
+        width: 300px;
+    }
+    .logo {
+        width: 120px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    nav {
+        display: block;
+        margin: 0 auto;
+    }
+    .menu-list a{
+        font-size: 1rem;
+    }
+
+    .menu-list   {
+        margin: 0 auto;
+    }
+    .main-visual {
+        top: 0;
+        height: calc(1.2vw + 78.67px + 60vw + 3.5vw + 10vw);
+    }
+    .main-visual img {
+        position: absolute;
+        top: calc(1.2vw + 78.67px);
+        width: 100%;
+    }
+    .main-copy {
+        width: 40vw;
+        height: 40vw;
+        border: 0.8vw solid #191d4d;
+        padding: 2vw 3vw;
+        position: absolute;
+        top: calc(1.2vw + 78.67px + 10vw);
+        left: 5vw;
+    }
+
+    .main-copy h1 {
+        font-size: 6vw;
+        line-height: 9vw;
+    }
+    .sub-copy {
+        display: inline-block;
+        background-color: #191d4d;
+        color: #fff;
+        text-align:center;
+        margin-top: calc(1.2vw + 78.67px + 60vw);
+        font-size: 2vw;
+        line-height: 3.5vw;
+        width: 100%;
+    }
+
+    .main-copy2 h2 {
+        /*筆記体*/
+        font-size: 8vw;
+        margin-top: 60vw;
+        right: 3vw;
+    }
+    .sub-copy br{
+        display: none;
+
+    }/*----------------------------main visualここまで------------------------*/
+    .service h2,
+    .blog-section h2 {
+        padding: 5vw 0;
+    }
+    .service,.blog-section {
+        width: 90vw;
+        box-shadow: none;
+        border: none;
+        width: 90%;
+        margin-bottom: 13.8vw;
+        }
+    .service-container,.blog-section-container {
+        width: 90vw;
+        /* flex-direction: column; */
+    }
+    /*-------------------------------------serviceとblogまとめて*/
+    .service h2:before,
+    .blog-section h2:before {
+        top: calc(2.5vw + 32px);
+        left: -5vw;
+        width: calc(50vw - 100px);
+        height: 1px;
+        content: '';
+        background: #191d4d;
+    }
+    .blog-section h2:before {
+        width: calc(50vw - 60px);
+    }
+    .item h3{
+        top: 2.6vw;
+        font-size: 4vw;
+    }
+    .item img,.item p,
+    .blog-section-item img,
+    .blog-section h3{
+        width: 42vw;
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+    .item img,
+    .blog-section-item img{
+        height: 42vw;
+    }
+    .blog-section h3 {
+        font-size: 3vw;
+        line-height: 4vw;
+        padding: 0;
+    }
+    .item p,.blog-section-item h3 {
+        padding: 2.7vw 0 2.7vw 0;
+    }
+
+        /*-------------Works--------------*/
+
+    .works-section {
+        margin-bottom: 13.8vw;
+        padding: 5% 0;
+        background-color: #CCF3FA;
+    }
+
+    .works-container {
+        width: 90vw;
+        margin-bottom: 0px;
+    }
+    .works-section h2 {
+        padding-bottom: 4.6vw;
+    }
+    .works-p {
+        width: 90vw;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+    .works-p p{
+        font-size: 2vw;
+        line-height: 3.5vw;
+        padding: 3vw;
+        text-align: center;
+    }
+    .works-section h2:before {
+        width: calc(50vw - 100px);
+    }
+    .page {
+        width: 90vw;
+    }
+    #slide {
+        /* position: none;
+        overflow: none; */
+        height: 60vw;
+    }
+
+    #slide ul {
+        /* position: none; */
+        width: 270vw;
+    }
+
+    #slide li {
+        /* float: none; */
+        width: 90vw;
+    }
+
+
+     /*-------------------------------------------*/
+
+    .button p{
+        font-size: 4vw;
+        line-height: 10vw;
+        padding: 0;
+        width: 50vw;
+        height: 10vw;
+        border-radius: 100vh;
+    }
+/*----------------------------Blogのタグについて*/
+
+.blog-tag p {
+    font-size: 12px;
+    width: 60px;
+    margin-bottom: 0;
+}
+
+/*-----------------------------------contact*/
+    .contact-section h2{
+        padding-bottom: 25px;
+    }
+    .contact-section {
+        width: 90vw;
+        background-color: #191d4d;
+        margin: 0 auto;
+        margin-bottom: 14vw;
+        padding-top: 0.9vw;
+        padding-bottom: 5.5vw;
+        border-radius: 100vh;
+    }
+
+    .contact-section p {
+        width: 55.5vw;
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+/*-----------------------------------footer*/
+    footer {
+        padding: 10px 0;
+    }
+    .footer {
+        width: 90vw;
+    }
+    .footer-list {
+        display: none;
+    }
+    small {
+    font-size: 1.5vw;
+    margin: 0 auto;
+    }
+}

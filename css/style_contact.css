@@ -1,0 +1,415 @@
+@charset "utf-8";
+
+.copy {/*-----------------about~contactのmain-copy-------------------*/
+    display: table-cell;
+    vertical-align: middle;
+}
+.copy p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.main-copy h1 {
+    display: table-cell;
+    font-size: 43px;
+    line-height: 56px;
+    font-family: "ヒラギノ角ゴ w6",sans-serif;
+    vertical-align: middle;
+}/*----------------about~contactのmain-copyここまで-------------------*/
+
+/*-------------Contact.html-------------*/
+.lala {
+    margin:0 25%;
+    text-align: center;
+    /* background-color: #fff; */
+    border-top: 2px dotted #191d4d;
+    border-bottom: 2px dotted #191d4d;
+    padding: 21px 0;
+    margin-bottom: 43px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.lala h2 {
+    margin-bottom: 10px;
+    font-size: 43px;
+    padding:0;
+}
+.point {
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #CCF3FA;
+    position: relative;
+}
+
+.balloon:after {/*吹き出し風の三角部分*/
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-style: solid;
+    border-color: #CCF3FA transparent transparent transparent;
+    border-width: 100px 100px  0 100px ;
+}
+
+
+.attention {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.item p {
+    font-size: 13px;
+    line-height: 20px;
+    width: 200px;
+    margin: 0;
+}
+
+.contact {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+.confirm {
+    margin: 0 auto;
+    margin-top: 130px;
+}
+article .about-personal {
+    border: 1px solid #191d4d;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 43px 43px;
+}
+
+.about-personal {
+    width: 900px;
+}
+
+.about-personal h2 {
+    padding: 43px;
+    font-size: 43px;
+}
+
+.about-personal p {
+    width: 650px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 30px;
+}
+table {
+    margin-top: 108px;
+}
+th{
+    width: 270px;
+    }
+td {
+    width: 810px;
+}
+
+.contact input,
+.contact textarea,
+select {
+    border: 1px solid #191d4d;
+    border-radius: 5px;
+    line-height: 2rem;
+    margin-bottom: 32px;
+    width: 100%;
+}
+.contact textarea{
+    height: 200px;
+}
+.confirm input,
+.confirm textarea,
+select {
+    border: 1px solid #191d4d;
+    border-radius: 5px;
+    line-height: 2rem;
+    width: 100%;
+}
+
+table p {
+    font-size: 20px;
+    margin-bottom: 32px;
+    vertical-align: middle;
+}
+
+table span ,
+.nini {
+    vertical-align: middle;
+    font-size: 13px;
+    color: #fff;
+    background-color:rgb(145, 141, 143);
+    padding: 3.5px;
+    margin-right: 10px;
+}
+table span {
+    background-color:rgba(231, 35, 133);
+}
+
+input,textarea{
+    font-size: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 5px 10px 5px 10px;
+    outline: none;
+}
+
+input[type="placeholder"]{
+    margin-left: 20px;
+}
+input[type="submit"] {
+    width: 650px;
+    border: none;
+    line-height: 1.5rem;
+    font-size: 40px;
+    color: #fff;
+    height: 100px;
+    border-radius: 100vh;
+    display: block;
+    margin: 50px auto 100px;
+    background-color: rgba(231, 35, 133);
+    box-shadow: 0px 6px #85586e;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(231, 35, 133, 0.7);
+    outline: none;
+}
+
+input[type="submit"]:active {
+    background-color: rgba(231, 35, 133);
+    position: relative;
+    top: 6px;
+    box-shadow: none;
+    outline: none;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: ヒラギノ角ゴ Pro W6;
+    text-align: left;
+}
+
+#check{
+    color:rgb(231, 35, 133);
+    display:block;
+    text-align: center;
+    font-size:25px;
+}
+
+/*-------------------------フッター-------------------------*/
+footer {
+    background-color: #e6dffa;
+}
+/* レスポンシブ対応＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+@media ( max-width: 950px) {
+   /*-------------------------------------about~contactのmain-copy*/
+    .copy p {
+        font-size: 1.5vw;
+        line-height: 3vw;
+    }
+    .main-copy h1 {
+        font-size: 6vw;
+        line-height: 9vw;
+    }/*-----------------------------about~contactのmain-copyここまで*/
+    .main-visual{
+        height: calc(1.2vw + 78px + 60vw + 3.5vw);
+    }
+/*--------------------------------contact--------------------------- */
+    .lala {
+        margin:0 10%;
+        padding: 2vw 0;
+        margin-bottom: 4vw;
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+    .lala h2 {
+        margin-bottom: 10px;
+        font-size: 4vw;
+        padding:0;
+    }
+    .point {
+        padding: 4.6vw 0;
+    }
+    .balloon:after {/*吹き出し風の三角部分*/
+        border-width: 12vw 12vw 0 12vw;
+    }
+
+
+    .attention {
+        width: 90vw;
+        padding: 0 4.6vw;
+    }
+
+    .item img {
+        width: 22vw;
+        height: 22vw;
+    }
+
+
+    .item p {
+        font-size: 1.8vw;
+        line-height: 3.6vw;
+        width: 22vw;
+        margin: 0;
+    }
+
+    .contact {
+        width: 90vw;
+        margin-top: 12vw;
+    }
+
+    .confirm {
+        margin-top: 12vw;
+    }
+    article .about-personal {
+        border: 1px solid #191d4d;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 43px 43px;
+    }
+
+    .about-personal {
+        width: 90vw;
+    }
+
+    .about-personal h2 {
+        padding: 4vw;
+        font-size: 4vw;
+    }
+
+    .about-personal p {
+        width: 60vw;
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+    table {
+        width: 100%;
+        margin-top: 10vw;
+    }
+    th,td {
+        display: block;
+        width: 100%;
+        }
+
+    table p {
+        font-size: 2vw;
+        margin: 0;
+    }
+    th p{
+        line-height: 4vw;/*bodyのlineheightが2rem*/
+    }
+    table span ,
+    .nini {
+        font-size: 1.5vw;
+        color: #fff;
+        padding: 0.4vw;
+        margin-right: 0.9vw;
+    }
+
+    .contact input,
+    .contact textarea,
+    select {
+        border: 1px solid #191d4d;
+        border-radius: 5px;
+        line-height: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    .contact textarea{
+        height: 200px;
+    }
+
+    .confirm input,
+    .confirm textarea,
+    select {
+        border: 1px solid #191d4d;
+        border-radius: 5px;
+        line-height: 3vw;
+    }
+
+    input,textarea{
+        font-size: 2vw;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        padding: 1vw 2vw 1vw 2vw;
+    }
+
+    input[type="placeholder"] {
+        font-size: 2vw;
+        margin-left: 20px;
+    }
+    select {
+        font-size: 2vw;
+    }
+    input[type="submit"] {
+        width: 60vw;
+        line-height: 1.5rem;
+        font-size: 3.7vw;
+        height: 9.2vw;
+        border-radius: 100vh;
+        border: none;
+        margin: 50px auto 100px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: rgba(231, 35, 133, 0.7);
+        outline: none;
+    }
+
+    input[type="submit"]:active {
+        background-color: rgba(231, 35, 133);
+        position: relative;
+        top: 6px;
+        box-shadow: none;
+        outline: none;
+    }
+
+    label {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: ヒラギノ角ゴ Pro W6;
+        text-align: left;
+    }
+
+    #check{
+        color:rgb(231, 35, 133);
+        display:block;
+        text-align: center;
+        font-size:25px;
+    }
+
+    /*--------------------------------footer--------------------------- */
+    footer {
+        padding: 10px 0;
+    }
+        .footer-list {
+            display: none;
+        }
+        small {
+            margin: 0 auto;
+        }
+}
