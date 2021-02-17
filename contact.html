@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LaLa DESIGN | Contact お問い合わせ</title>
+    <!-- レスポンシブ対応-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="デザインとイラストのポートフォリオサイト">
+    <meta name="keywords" content="デザイン,イラスト,デザイナー,イラストレーター,Design,Illustration,大阪,関西">
+    <!--リセットCSS/Ress css-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_contact.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+    <!--    グーグルフォント-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!-- ファビコン -->
+    <link rel="icon" type="image/png" href="images/lala_icon.png">
+</head>
+
+
+<!--======================header=======================-->
+
+<body>
+    <div id="contact">
+        <header>
+            <div class="page-header">
+                <a href="index.html"><img src="images/home/logo.png" class="logo header-item" alt="logo"></a>
+                <nav class="header-item menu-list">
+                    <ul>
+                        <li class="menu-item"><a href="about.html">About</a></li>
+                        <li class="menu-item"><a href="works.html">Works</a></li>
+                        <li class="menu-item"><a href="blog.html">Blog</a></li>
+                        <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <!--#contact===========TOP画像============-->
+        <div class="main-visual wrapper">
+            <img src="images/contact/contact-image.jpg" alt="Contactイメージ">
+            <div class="main-copy">
+                <div class="copy">
+                    <h1>Contact</h1>
+                    <p>お問い合わせは<br>
+                        こちらからお気軽にどうぞ</p>
+                </div>
+            </div>
+            <div class="main-copy2">
+                <h2>Simple & Fun</h2>
+            </div>
+            <p class="sub-copy">大阪のデザイナー<br>LaLaのポートフォリオサイト</p>
+        </div>
+        <!--===========Contact============-->
+        <section class="point">
+            <div class="lala">
+                <h2>LaLa DESIGN</h2>
+                <p>〒123-4567 大阪府大阪市大阪町一丁目2番3号<br>
+                000-1234-5678 (平日 9:00~18:00)<br>
+                lala@mail.image.com (平日 9:00~18:00)</p>
+            </div>
+            <div class="attention">
+                <div class="item">
+                    <img src="images/contact/mail.png" alt="メール">
+                    <p>通常、営業日の3日以内にメールにてご連絡しています。 </p>
+                </div>
+                <div class="item telephone">
+                    <img src="images/contact/telephone.png" alt="電話">
+                    <p>お急ぎの際はお電話にてお問い合わせください。</p>
+                </div>
+                <div class="item">
+                    <img src="images/contact/other.png" alt="お問い合わせ">
+                    <p>ご依頼・お見積もり・その他のお問い合わせもお気軽にどうぞ。</p>
+                </div>
+            </div>
+            <div class="balloon"></div>
+        </section>
+
+        <section>
+            <form id="confirm" method="get" name="message_form">
+                <div class="contact wrapper">
+
+                    <table>
+                        <tr>
+                            <th><label for="title">
+                                <p><span>必須</span>ご用件</p>
+                                </label></th>
+                            <td><select id="title" name="message-title"  placeholder="タイトル">
+                                <option value="お問い合わせ">1.制作実績についてのお問い合わせ</option>
+                                <option value="お見積もり">2.ご依頼やお見積もりについてのご相談</option>
+                                <option value="その他">3.その他</option>
+                            </select></td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="name">
+                                    <p><span>必須</span>お名前</p>
+                                </label></th>
+                            <td><input type="text" name="your_name" placeholder="苗字　名前" id="name"></td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="email">
+                                    <p><span>必須</span>メールアドレス</p>
+                                </label></th>
+                            <td><input type="email" name="your_email" placeholder="lala@email.image.com" id="email"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="tel" >
+                                    <p><span class="nini">任意</span>お電話番号</p>
+                                </label></th>
+                            <td><input type="tel" name="your_number" placeholder="000-0000-0000" id="tel"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="message" >
+                                    <p><span>必須</span>内容</p><label></th>
+                            <td><textarea type="message"  name="your_message"
+                                    placeholder="このHPは架空のデザイナーのポートフォリオサイトです。連絡先は実在しない住所・電話番号・メールアドレスです。トップページのメインビジュアルやworksに掲載のイラストやデザインはサイト制作者の制作物です。その他の写真はフリー素材を使用しています。" id="message"></textarea></td>
+                        </tr>
+                    </table>
+                    <span id="check"></span>
+                        <div class="about-personal">
+                            <h2>個人情報の取り扱い</h2>
+                            <p>記載していただいた個人情報は、お問い合わせ内容の確認・返信以外には使用しません。ご本人の同意がなければ第三者に個人情報を提供することもございません。取得した個人情報は管理責任者を定め、紛失や漏洩などが発生しないよう積極的な安全対策を実施いたします。
+                            </p>
+                        </div>
+
+
+                        <input type="submit" class="button" value="確認" id="confirm-bottun" onClick="return check()">
+                </div>
+            </form>
+        </section>
+               <!--============フッター===========-->
+
+        <footer>
+            <div class="footer">
+            <ul class="footer-list">
+                <li class="footer-item first"><a href="about.html">About</a></li>
+                <li class="footer-item"><a href="works.html">Works</a></li>
+                <li class="footer-item"><a href="blog.html">Blog</a></li>
+                <li class="footer-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <small>Copyright&copy;2021 LaLa DESIGN All rights Reserved.</small>
+        </div>
+        </footer>
+    </div>
+</body><script type="text/javascript" src="js/common.js"></script>
+<!--===================================/body=================================-->
+</html>
