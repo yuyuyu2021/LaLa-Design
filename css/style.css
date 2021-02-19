@@ -339,7 +339,10 @@ button:focus {
 button:hover {
     opacity: 1;
 }
-
+#prevBtn img,#nextBtn img{
+    width: 29px;
+    height: 50px;
+}
 #prevBtn {
     position: absolute;
     top: 45%;
@@ -705,100 +708,89 @@ li.first a {
         margin-bottom:5px;
     }
     .menu-list a{
-        font-size: 12px;
+        font-size: 16px;
         padding:5px 7px 7px 5px;
     }
     .main-visual {
         top: 0;
-        height: calc(57.5px + 60vw + 5vw + 30px);
+        height: calc(66.5px + 60vw + 8vw);
     }
     .main-visual img {
-        top: 57.5px;
+        top: 66.5px;
     }
     .main-copy {
-        top: calc(57.5px + 10vw);
+        top: calc(66.5px + 10vw);
         left: 5vw;
     }
     .sub-copy {
-        margin-top: calc(57.5px + 60vw);
+        margin-top: calc(66.5px + 60vw);
         font-size: 3vw;
         line-height: 8vw;
     }
-
-    .main-copy2 h2 {
-        /*筆記体*/
-        font-size: 8vw;
-        margin-top: 60vw;
-        right: 3vw;
+    .main-copy2 h2 {/*筆記体*/
+        margin-top: 61vw;
     }
-    .sub-copy br{
-        display: none;
-
-    }/*----------------------------main visualここまで------------------------*/
+    /*----------------------------main visualここまで------------------------*/
+    .service-container,
+    .blog-section-container {
+        flex-direction: column;
+    }
     .service h2,
     .blog-section h2 {
         padding: 5vw 0;
+        font-size:40px;
+        margin-top: 20px;
     }
-    .service,.blog-section {
-        width: 90vw;
-        box-shadow: none;
-        border: none;
-        width: 90%;
-        margin-bottom: 13.8vw;
-        }
-    .service-container,.blog-section-container {
-        width: 90vw;
-        /* flex-direction: column; */
-    }
+
     /*-------------------------------------serviceとblogまとめて*/
     .service h2:before,
     .blog-section h2:before {
-        top: calc(2.5vw + 32px);
+        top: 32px;
         left: -5vw;
-        width: calc(50vw - 100px);
-        height: 1px;
-        content: '';
-        background: #191d4d;
+        width: calc(50vw - 80px);
     }
     .blog-section h2:before {
         width: calc(50vw - 60px);
     }
     .item h3{
-        top: 2.6vw;
-        font-size: 4vw;
+        top: -1vw;
+        font-size: 10vw;
+        left: -2vw;
+    }
+    .service-container section,
+    .blog-section-item {
+        margin-top: 50px;
+    }
+    .service-container section:first-child,
+    .blog-section-item:first-child {
+        margin-top: 0;
     }
     .item img,.item p,
     .blog-section-item img,
     .blog-section h3{
-        width: 42vw;
-        font-size: 2vw;
-        line-height: 4vw;
+        width: 90vw;
+        font-size: 3.5vw;
+        line-height: 7vw;
     }
     .item img,
     .blog-section-item img{
-        height: 42vw;
+        height: auto;
     }
     .blog-section h3 {
-        font-size: 3vw;
-        line-height: 4vw;
+        font-size: 6vw;
+        line-height: 12vw;
         padding: 0;
     }
-    .item p,.blog-section-item h3 {
-        padding: 2.7vw 0 2.7vw 0;
-    }
+
 
         /*-------------Works--------------*/
 
     .works-section {
         margin-bottom: 13.8vw;
-        padding: 5% 0;
+        padding: 10% 0;
         background-color: #CCF3FA;
     }
 
-    .works-container {
-        width: 90vw;
-        margin-bottom: 0px;
-    }
     .works-section h2 {
         padding-bottom: 4.6vw;
     }
@@ -809,8 +801,8 @@ li.first a {
         margin-top: 0;
     }
     .works-p p{
-        font-size: 2vw;
-        line-height: 3.5vw;
+        font-size: 3.5vw;
+        line-height: 7vw;
         padding: 3vw;
         text-align: center;
     }
@@ -820,31 +812,19 @@ li.first a {
     .page {
         width: 90vw;
     }
-    #slide {
-        /* position: none;
-        overflow: none; */
-        height: 60vw;
+
+    #prevBtn img,#nextBtn img{
+        width: 15px;
+        height: 30px;
     }
-
-    #slide ul {
-        /* position: none; */
-        width: 270vw;
-    }
-
-    #slide li {
-        /* float: none; */
-        width: 90vw;
-    }
-
-
      /*-------------------------------------------*/
 
     .button p{
-        font-size: 4vw;
-        line-height: 10vw;
+        font-size: 6vw;
+        line-height: 14vw;
         padding: 0;
-        width: 50vw;
-        height: 10vw;
+        width: 90vw;
+        height: 14vw;
         border-radius: 100vh;
     }
 /*----------------------------Blogのタグについて*/
@@ -857,12 +837,12 @@ li.first a {
 
 /*-----------------------------------contact*/
     .contact-section h2{
-        padding-bottom: 20px;
+        padding: 30px 0 20px 0;
     }
     .contact-section {
         padding-top: 0.9vw;
         padding-bottom: 5.5vw;
-        border-radius: 40px;
+        border-radius: 80px;
     }
 
     .contact-section p {
@@ -872,7 +852,7 @@ li.first a {
     }
 /*-----------------------------------footer*/
     footer {
-        padding: 5px 0;
+        padding: 10px 0;
     }
     .footer {
         width: 90vw;
