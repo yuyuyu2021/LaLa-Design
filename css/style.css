@@ -690,3 +690,193 @@ li.first a {
     margin: 0 auto;
     }
 }
+
+
+
+
+
+@media ( max-width: 400px) {/*---------------------------------400px以下の場合*/
+    .page-header {
+        flex-direction: column;
+        width:100%;
+    }
+
+    .menu-list a{
+        font-size: 1rem;
+    }
+
+    .sub-copy {
+        display: inline-block;
+        background-color: #191d4d;
+        color: #fff;
+        text-align:center;
+        margin-top: calc(1.2vw + 78.67px + 60vw);
+        font-size: 5vw;
+        line-height: 10vw;
+        width: 100%;
+    }
+
+    .main-copy2 h2 {
+        /*筆記体*/
+        font-size: 8vw;
+        margin-top: 60vw;
+        right: 3vw;
+    }
+    .sub-copy br{
+        display: none;
+
+    }/*----------------------------main visualここまで------------------------*/
+    .service h2,
+    .blog-section h2 {
+        padding: 5vw 0;
+    }
+    .service,.blog-section {
+        width: 90vw;
+        box-shadow: none;
+        border: none;
+        width: 90%;
+        margin-bottom: 13.8vw;
+        }
+    .service-container,.blog-section-container {
+        width: 90vw;
+        /* flex-direction: column; */
+    }
+    /*-------------------------------------serviceとblogまとめて*/
+    .service h2:before,
+    .blog-section h2:before {
+        top: calc(2.5vw + 32px);
+        left: -5vw;
+        width: calc(50vw - 100px);
+        height: 1px;
+        content: '';
+        background: #191d4d;
+    }
+    .blog-section h2:before {
+        width: calc(50vw - 60px);
+    }
+    .item h3{
+        top: 2.6vw;
+        font-size: 4vw;
+    }
+    .item img,.item p,
+    .blog-section-item img,
+    .blog-section h3{
+        width: 42vw;
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+    .item img,
+    .blog-section-item img{
+        height: 42vw;
+    }
+    .blog-section h3 {
+        font-size: 3vw;
+        line-height: 4vw;
+        padding: 0;
+    }
+    .item p,.blog-section-item h3 {
+        padding: 2.7vw 0 2.7vw 0;
+    }
+
+        /*-------------Works--------------*/
+
+    .works-section {
+        margin-bottom: 13.8vw;
+        padding: 5% 0;
+        background-color: #CCF3FA;
+    }
+
+    .works-container {
+        width: 90vw;
+        margin-bottom: 0px;
+    }
+    .works-section h2 {
+        padding-bottom: 4.6vw;
+    }
+    .works-p {
+        width: 90vw;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+    .works-p p{
+        font-size: 2vw;
+        line-height: 3.5vw;
+        padding: 3vw;
+        text-align: center;
+    }
+    .works-section h2:before {
+        width: calc(50vw - 100px);
+    }
+    .page {
+        width: 90vw;
+    }
+    #slide {
+        /* position: none;
+        overflow: none; */
+        height: 60vw;
+    }
+
+    #slide ul {
+        /* position: none; */
+        width: 270vw;
+    }
+
+    #slide li {
+        /* float: none; */
+        width: 90vw;
+    }
+
+
+     /*-------------------------------------------*/
+
+    .button p{
+        font-size: 4vw;
+        line-height: 10vw;
+        padding: 0;
+        width: 50vw;
+        height: 10vw;
+        border-radius: 100vh;
+    }
+/*----------------------------Blogのタグについて*/
+
+.blog-tag p {
+    font-size: 12px;
+    width: 60px;
+    margin-bottom: 0;
+}
+
+/*-----------------------------------contact*/
+    .contact-section h2{
+        padding-bottom: 25px;
+    }
+    .contact-section {
+        width: 90vw;
+        background-color: #191d4d;
+        margin: 0 auto;
+        margin-bottom: 14vw;
+        padding-top: 0.9vw;
+        padding-bottom: 5.5vw;
+        border-radius: 100vh;
+    }
+
+    .contact-section p {
+        width: 55.5vw;
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+/*-----------------------------------footer*/
+    footer {
+        padding: 10px 0;
+    }
+    .footer {
+        width: 90vw;
+    }
+    .footer-list {
+        display: none;
+    }
+    small {
+    font-size: 1.5vw;
+    margin: 0 auto;
+    }
+}
