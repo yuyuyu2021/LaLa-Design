@@ -472,13 +472,17 @@ li.first a {
     .wrapper{
         width: 100%;
     }
+    header{
+        padding: 0;
+    }
     .page-header {
+        width:100%;
         flex-direction: column;
-        width: 300px;
     }
     .logo {
         width: 120px;
         height: auto;
+        margin-top: 10px;
         margin-bottom: 10px;
     }
     nav {
@@ -486,7 +490,8 @@ li.first a {
         margin: 0 auto;
     }
     .menu-list a{
-        font-size: 1rem;
+        font-size: 3vw;
+        line-height: 6vw;
     }
 
     .menu-list   {
@@ -662,8 +667,6 @@ li.first a {
     }
     .contact-section {
         width: 90vw;
-        background-color: #191d4d;
-        margin: 0 auto;
         margin-bottom: 14vw;
         padding-top: 0.9vw;
         padding-bottom: 5.5vw;
@@ -696,24 +699,30 @@ li.first a {
 
 
 @media ( max-width: 400px) {/*---------------------------------400px以下の場合*/
-    .page-header {
-        flex-direction: column;
-        width:100%;
+    .logo {
+        width: 90px;
+        margin-top:5px;
+        margin-bottom:5px;
     }
-
     .menu-list a{
-        font-size: 1rem;
+        font-size: 12px;
+        padding:5px 7px 7px 5px;
     }
-
+    .main-visual {
+        top: 0;
+        height: calc(57.5px + 60vw + 5vw + 30px);
+    }
+    .main-visual img {
+        top: 57.5px;
+    }
+    .main-copy {
+        top: calc(57.5px + 10vw);
+        left: 5vw;
+    }
     .sub-copy {
-        display: inline-block;
-        background-color: #191d4d;
-        color: #fff;
-        text-align:center;
-        margin-top: calc(1.2vw + 78.67px + 60vw);
-        font-size: 5vw;
-        line-height: 10vw;
-        width: 100%;
+        margin-top: calc(57.5px + 60vw);
+        font-size: 3vw;
+        line-height: 8vw;
     }
 
     .main-copy2 h2 {
@@ -848,35 +857,29 @@ li.first a {
 
 /*-----------------------------------contact*/
     .contact-section h2{
-        padding-bottom: 25px;
+        padding-bottom: 20px;
     }
     .contact-section {
-        width: 90vw;
-        background-color: #191d4d;
-        margin: 0 auto;
-        margin-bottom: 14vw;
         padding-top: 0.9vw;
         padding-bottom: 5.5vw;
-        border-radius: 100vh;
+        border-radius: 40px;
     }
 
     .contact-section p {
-        width: 55.5vw;
-        font-size: 2vw;
-        line-height: 4vw;
+        width: 70vw;
+        font-size: 12px;
+        line-height: 24px;
     }
 /*-----------------------------------footer*/
     footer {
-        padding: 10px 0;
+        padding: 5px 0;
     }
     .footer {
         width: 90vw;
     }
-    .footer-list {
-        display: none;
-    }
     small {
-    font-size: 1.5vw;
-    margin: 0 auto;
+    font-size: 10px;
+    line-height:14px;
+    text-align:center;
     }
 }
