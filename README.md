@@ -4,6 +4,6 @@
 (all right reserved and Reproduction is prohibited.) <br>
 
 ※macにてChrome、safari。windowsにてChromeで動作確認。<br>
-※windowsでは一部レイアウトが崩れている箇所があります。<br>
+※iphone6s,iphone初代SE safariにて動作確認。
 ※随時、内容を変更する可能性があります。<br>
 
