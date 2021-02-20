@@ -30,7 +30,9 @@ h2{
     text-align: center;
     font-size: 40px;
 }
-
+h3{
+    font-family: Arial,sans-serif;
+}
 .wrapper {
     width: 900px;
     margin: 0 auto;
@@ -71,7 +73,7 @@ header {
     background-color: #fff;
     padding-top: 1.2vw;
     padding-bottom: 1.2vw;
-width: 100%;
+    width: 100%;
     position: fixed;
     z-index: 999;
     top: 0;
@@ -707,23 +709,33 @@ li.first a {
         margin-top:5px;
         margin-bottom:5px;
     }
+
+    .menu-list li{
+        margin-right: calc(calc(90vw - 227.61px)/4);
+    }
+    .menu-list li:last-child{
+        margin-right: 0;
+    }
     .menu-list a{
         font-size: 16px;
         padding:5px 7px 7px 5px;
     }
+    .menu-list a{
+        font-size: 16px;
+    }
     .main-visual {
         top: 0;
-        height: calc(66.5px + 60vw + 8vw);
+        height: calc(58.5px + 60vw + 8vw);
     }
     .main-visual img {
-        top: 66.5px;
+        top: 58.5px;
     }
     .main-copy {
-        top: calc(66.5px + 10vw);
+        top: calc(58.5px + 10vw);
         left: 5vw;
     }
     .sub-copy {
-        margin-top: calc(66.5px + 60vw);
+        margin-top: calc(58.5px + 60vw);
         font-size: 3vw;
         line-height: 8vw;
     }

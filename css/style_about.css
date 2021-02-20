@@ -211,3 +211,97 @@ footer {
         padding: 0 0 6vw 0;
     }
 }
+@media ( max-width: 400px) {
+    /*-------------------------------------about~contactのmain-copy*/
+    .copy p {
+        font-size: 2vw;
+        line-height: 5vw;
+    }
+    .main-copy h1 {
+        font-size: 8vw;
+        line-height: 11vw;
+    }/*-----------------------------about~contactのmain-copyここまで*/
+    .about{
+        margin-top: 8vw;
+    }
+    .intro,
+    .hobby {
+    width:90vw;
+    flex-direction: column;
+}
+
+    .intro-item {
+        width: 90vw;
+    }
+    .intro img{
+        width: 100%;
+        height: 90vw;
+        object-fit: cover;
+        margin-right: 0;
+    }
+    .intro-item h2{
+        font-size: 3.7vw;
+        padding-bottom: 3vw;
+    }
+
+    .intro-item h2 {
+        font-size: 30px;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .career {
+        margin-right: 0;
+    }
+    table {
+        width: 90vw;
+        margin-bottom: 0;
+    }
+    th,td {
+        display: block;
+        width: 100%;
+        }
+    td{
+        line-height: 20px;
+        margin-bottom: 24px;
+    }
+
+    table p {
+        font-size: 12px;
+    }
+    th p{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .history p {
+        width: 90vw;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .extra h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    }
+
+    .hobby {
+        width: 90vw;
+    }
+
+    .hobby-item img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hobby-item h3 {
+        font-size: 10vw;
+        top: 5vw;
+        left: -0.8vw;
+    }
+
+    .hobby-item p {
+        width: 90vw;
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+}
