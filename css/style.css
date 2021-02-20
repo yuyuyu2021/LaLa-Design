@@ -719,23 +719,24 @@ li.first a {
     .menu-list a{
         font-size: 16px;
         padding:5px 7px 7px 5px;
+        line-height: 20px;
     }
     .menu-list a{
         font-size: 16px;
     }
     .main-visual {
         top: 0;
-        height: calc(65.5px + 60vw + 8vw);
+        height: calc(63.5px + 60.5vw + 8vw);
     }
     .main-visual img {
-        top: 65.5px;
+        top: 63.5px;
     }
     .main-copy {
-        top: calc(65.5x + 10vw);
+        top: calc(63.5px + 10vw);
         left: 5vw;
     }
     .sub-copy {
-        margin-top: calc(65.5px + 60vw);
+        margin-top: calc(63.5px + 60.5vw);
         font-size: 3vw;
         line-height: 8vw;
     }

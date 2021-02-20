@@ -222,14 +222,14 @@ footer {
 
 @media ( max-width: 950px) {
    /*-------------------------------------about~contactのmain-copy*/
-    .copy p {
-        font-size: 1.5vw;
-        line-height: 3vw;
-    }
-    .main-copy h1 {
-        font-size: 6vw;
-        line-height: 9vw;
-    }/*-----------------------------about~contactのmain-copyここまで*/
+   .copy p {
+    font-size: 10px;
+    line-height: 20px;
+}
+.main-copy h1 {
+    font-size: 7vw;
+    line-height: 11vw;
+}/*-----------------------------about~contactのmain-copyここまで*/
     .main-visual{
         height: calc(1.2vw + 78px + 60vw + 3.5vw);
     }
@@ -417,11 +417,11 @@ footer {
 @media ( max-width: 640px) {
     /*-------------------------------------about~contactのmain-copy*/
     .copy p {
-        font-size: 2vw;
-        line-height: 5vw;
+        font-size: 10px;
+        line-height: 20px;
     }
     .main-copy h1 {
-        font-size: 8vw;
+        font-size: 7vw;
         line-height: 11vw;
     }/*-----------------------------about~contactのmain-copyここまで*/
  /*--------------------------------contact--------------------------- */
@@ -504,15 +504,6 @@ footer {
      .contact textarea{
          height: 200px;
      }
-
-     .confirm input,
-     .confirm textarea,
-     select {
-         border: 1px solid #191d4d;
-         border-radius: 5px;
-         line-height: 3vw;
-     }
-
      input,textarea{
          font-size: 12px;
      }

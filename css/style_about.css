@@ -214,11 +214,11 @@ footer {
 @media ( max-width: 640px) {
     /*-------------------------------------about~contactのmain-copy*/
     .copy p {
-        font-size: 2vw;
-        line-height: 5vw;
+        font-size: 10px;
+        line-height: 20px;
     }
     .main-copy h1 {
-        font-size: 8vw;
+        font-size: 7vw;
         line-height: 11vw;
     }/*-----------------------------about~contactのmain-copyここまで*/
     .about{
