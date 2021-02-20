@@ -413,3 +413,131 @@ footer {
             margin: 0 auto;
         }
 }
+
+@media ( max-width: 640px) {
+    /*-------------------------------------about~contactのmain-copy*/
+    .copy p {
+        font-size: 2vw;
+        line-height: 5vw;
+    }
+    .main-copy h1 {
+        font-size: 8vw;
+        line-height: 11vw;
+    }/*-----------------------------about~contactのmain-copyここまで*/
+ /*--------------------------------contact--------------------------- */
+     .lala {
+         width:90vw;
+         margin: 0 auto;
+         margin-bottom: 4vw;
+         font-size: 12px;
+         line-height: 24px;
+     }
+     .lala h2 {
+         margin-bottom: 10px;
+         font-size: 30px;
+         padding: 10px;
+         margin-bottom: 0;
+     }
+     .point {
+         padding: 20px 0;
+     }
+
+     .attention {
+         width: 90vw;
+         padding: 0;
+     }
+
+     .item img {
+         width: 28vw;
+         height: 28vw;
+     }
+
+     .item p {
+         font-size: 10px;
+         line-height: 20px;
+         width: 28vw;
+         margin: 0;
+     }
+
+     article .about-personal {
+         border: 1px solid #191d4d;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         padding: 0 43px 43px;
+     }
+
+     .about-personal {
+         width: 90vw;
+     }
+
+     .about-personal h2 {
+         padding: 4vw;
+         font-size: 25px;
+     }
+
+     .about-personal p {
+         width: 90vw;
+         font-size: 12px;
+         line-height: 24px;
+     }
+
+     table p {
+         font-size: 12px;
+     }
+     th p{
+         line-height: 24px;/*bodyのlineheightが2rem*/
+     }
+     table span ,
+     .nini {
+         font-size: 12px;
+     }
+
+     .contact input,
+     .contact textarea,
+     select {
+         border: 1px solid #191d4d;
+         border-radius: 5px;
+         line-height: 24px;
+         margin-bottom: 3vw;
+     }
+
+     .contact textarea{
+         height: 200px;
+     }
+
+     .confirm input,
+     .confirm textarea,
+     select {
+         border: 1px solid #191d4d;
+         border-radius: 5px;
+         line-height: 3vw;
+     }
+
+     input,textarea{
+         font-size: 12px;
+     }
+
+     input[type="text"],
+     input[type="email"],
+     input[type="tel"],
+     select,
+     textarea {
+         padding: 1vw 2vw 1vw 2vw;
+     }
+
+     input[type="placeholder"] {
+         font-size: 12px;
+         margin-left: 20px;
+     }
+     select {
+         font-size: 12px;
+     }
+     input[type="submit"] {
+         line-height: 60px;
+         font-size: 30px;
+         height: 60px;
+         border-radius: 100vh;
+         margin: 20px auto 100px;
+         border: none;
+     }
+    }

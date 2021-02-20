@@ -211,7 +211,7 @@ footer {
         padding: 0 0 6vw 0;
     }
 }
-@media ( max-width: 400px) {
+@media ( max-width: 640px) {
     /*-------------------------------------about~contactのmain-copy*/
     .copy p {
         font-size: 2vw;
@@ -291,10 +291,16 @@ footer {
         width: 100%;
         height: 100%;
     }
-
+    .hobby img{
+        height: 70vw;
+        object-fit: cover;
+    }
+    .hobby div:nth-of-type(3) img{
+        height: 100vw;
+    }
     .hobby-item h3 {
         font-size: 10vw;
-        top: 5vw;
+        top: 1vw;
         left: -0.8vw;
     }
 

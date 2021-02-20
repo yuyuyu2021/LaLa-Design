@@ -703,7 +703,7 @@ li.first a {
 
 
 
-@media ( max-width: 400px) {/*---------------------------------400px以下の場合*/
+@media ( max-width: 640px) {/*---------------------------------400px以下の場合*/
     .logo {
         width: 90px;
         margin-top:5px;
@@ -725,17 +725,17 @@ li.first a {
     }
     .main-visual {
         top: 0;
-        height: calc(58.5px + 60vw + 8vw);
+        height: calc(65.5px + 60vw + 8vw);
     }
     .main-visual img {
-        top: 58.5px;
+        top: 65.5px;
     }
     .main-copy {
-        top: calc(58.5px + 10vw);
+        top: calc(65.5x + 10vw);
         left: 5vw;
     }
     .sub-copy {
-        margin-top: calc(58.5px + 60vw);
+        margin-top: calc(65.5px + 60vw);
         font-size: 3vw;
         line-height: 8vw;
     }

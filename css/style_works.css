@@ -171,3 +171,39 @@ footer {
         margin-bottom: 9.2vw;
     }
 }
+@media ( max-width: 640px) {
+/*-------------------------------------about~contactのmain-copy*/
+    .copy p {
+        font-size: 2vw;
+        line-height: 5vw;
+    }
+    .main-copy h1 {
+        font-size: 8vw;
+        line-height: 11vw;
+    }/*-----------------------------about~contactのmain-copyここまで*/
+    .works{
+        width: 90vw;
+    }
+    .announce h2 {
+        font-size: 30px;
+        line-height: 36px;
+        /* 装飾用 */
+    }
+    .announce p{
+        width: 90vw;
+        font-size: 12px;
+        line-height: 24px;
+        padding-bottom: 4.6vw;
+    }
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+    .works-item h3 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .works-item p{
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
